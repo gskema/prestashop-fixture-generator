@@ -1,0 +1,10 @@
+{
+  "name": "fixtures",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-gm": "0.0.8",
+    "gulp-rename": "^1.2.2"
+  }
+}
