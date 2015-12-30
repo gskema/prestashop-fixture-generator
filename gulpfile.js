@@ -1,6 +1,7 @@
 var gulp   = require('gulp');
 var gm     = require('gulp-gm');
 var rename = require("gulp-rename");
+var del    = require('del');
 
 var sizes = {
     c : [
@@ -127,6 +128,10 @@ gulp.task('create-module-images', function(){
         { imageMagick: true }
     ))
     .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('clean', function() {
+    del(['dist/*']);
 });
 
 gulp.task('default', [
